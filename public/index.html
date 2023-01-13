@@ -13,16 +13,16 @@
 </head>
 <body class="font-inter">
     
-    <header class="fixed w-full bg-white py-5 px-4 flex justify-between ">
+    <header class="fixed w-full bg-white py-5 px-4 flex justify-between lg:py-10 lg:px-16 ">
 
-        <nav class="flex justify-between items-center list-none">
+        <nav class="flex justify-between items-center list-none w-full">
 
             <h1>
                 <a href="index.html"><img src="images/logo.svg" alt="logo"></a>
             </h1>
 
             <!--Desktop-->
-            <ul class="hidden">
+            <ul class="hidden lg:flex lg:gap-x-14" >
                 <li>
                     <a>Home</a>
                 </li>
@@ -53,33 +53,48 @@
             </aside>
         </nav>
 
-        <img id="menuOpen" src="images/icon-menu.svg" alt="Menu"">
+        <img class="lg:hidden" id="menuOpen" src="images/icon-menu.svg" alt="Menu"">
 
     </header>
 
-    <main class="pt-20">
+    <main class="pt-20 lg:pt-32 lg:grid lg:grid-cols-3 lg:grid-rows-[auto_auto] lg:container lg:mx-auto">
 
-        <section class="px-4">
+        <section class="px-4 lg:grid lg:col-start-1 lg:col-end-3">
 
-            <img src="images/image-web-3-mobile.jpg">
+            <picture class="w-full">
+                
+                <source media="(min-width: 1024px)" srcset="images/image-web-3-desktop.jpg">
+
+                <img class="w-full" src="images/image-web-3-mobile.jpg">
+
+            </picture>
+
+
     
-            <div class="mt-6 ">
+            <div class="mt-6 lg:grid lg:grid-cols-2 lg:gap-4">
+
                 <h1 class="text-darkBlue text-[40px] font-extrabold leading-10">The Bright Future of Web 3.0?</h1>
-                <p class="mt-6">
-                We dive into the next evolution of the web
-                 that claims to put the power of the platforms
-                  back into the hands of the people. But is it 
-                  really fulfilling its promise?
-                </p>
+
+                <div>
+                    <p class="mt-6 lg:mt-0">
+                        We dive into the next evolution of the web
+                         that claims to put the power of the platforms
+                          back into the hands of the people. But is it 
+                          really fulfilling its promise?
+                    </p>
+                    <button class="text-white mt-6 bg-lightVermillion px-8 py-3 block uppercase tracking-[4.38px] font-bold">Read More</button>
+
+                </div>
+
             </div>
     
-            <button class="text-white mt-6 bg-lightVermillion px-8 py-3 block uppercase tracking-[4.38px] font-bold">Read More</button>
+
     
         </section>
 
 
         <!--New section-->
-        <section class="px-4 mt-20">
+        <section class="px-4 mt-20 lg:mt-0">
 
             <div class=" bg-darkBlue px-4 py-4">
 
@@ -107,7 +122,7 @@
         </section>
 
          <!--New section-->
-         <section class="px-4">
+         <section class="px-4 lg:grid lg:grid-cols-3 lg:col-start-1 lg:col-end-4">
 
             <div class="grid grid-cols-[30%_1fr] gap-x-4 mt-10">
 
